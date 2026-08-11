@@ -1,12 +1,10 @@
 import express from 'express';
+import healthRoutes from './routes/health-routes'
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('calorie API isgdgh running');
-});
-
+app.use("/api/health", healthRoutes);
 
 export default app;
