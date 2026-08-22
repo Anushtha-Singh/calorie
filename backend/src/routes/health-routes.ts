@@ -5,4 +5,5 @@ const healthRouter = express.Router();
 
 healthRouter.get("/", getHealthStatus);
 
+
 export default healthRouter;
