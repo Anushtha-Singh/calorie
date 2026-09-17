@@ -1,6 +1,6 @@
 import app from './app';
 import { PORT } from './config/env';
-import { connectDatabase } from './database/conntection'
+import { connectDatabase } from './database/conntection';
 
 const startServer = async () => {
     await connectDatabase();
